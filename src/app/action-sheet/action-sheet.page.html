@@ -1,0 +1,15 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>action-sheet</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-button expand="full" routerLink="/inicio">
+    ir a inicio
+  </ion-button>
+  <div class="container">
+    <ion-button (click)="presentActionSheet()">Open</ion-button>
+    <code *ngIf="result"> {{ result }} </code>
+  </div>
+</ion-content>
