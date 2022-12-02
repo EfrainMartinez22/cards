@@ -27,9 +27,19 @@ const routes: Routes = [
     loadChildren: () => import('./cards/cards.module').then( m => m.CardsPageModule)
   },
   {
+    path: 'producto',
+    loadChildren: () => import('./Citas/Citas.module').then( m => m.ProductoPageModule)
+  },
+  {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'infinite-scroll',
+    loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule)
+  },
+  
+
 
   
 ];

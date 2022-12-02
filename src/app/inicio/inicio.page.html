@@ -1,13 +1,31 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Inicio</ion-title>
+    <ion-title>inicio</ion-title>
   </ion-toolbar>
 </ion-header>
-
+<ion-content class="ion-padding">
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="document"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="color-palette"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 <ion-list>
   <ion-button routerLink="/alert">Alert</ion-button>
   <ion-button routerLink="/action-sheet">action-sheet</ion-button>
   <ion-button routerLink="/cards">cards</ion-button>
+  <ion-button routerLink="/producto">Citas</ion-button>
+  <ion-button routerLink="/infinite-scroll">infinite scroll</ion-button>
 
 </ion-list>
 
@@ -23,3 +41,4 @@
     <ion-icon name="accessibility-outline"></ion-icon>
     <ion-label>Action Sheet</ion-label>
   </ion-item>
+  
